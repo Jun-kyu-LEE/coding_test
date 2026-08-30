@@ -21,3 +21,8 @@ TARGET="$ROOT/$DIR/$NUM.cpp"
 
 cp "$ROOT/templates/swea_base.cpp" "$TARGET"
 echo "$DIR/$NUM.cpp"
+
+# 에디터에서 바로 열기
+if command -v code >/dev/null 2>&1; then
+    code "$TARGET"
+fi

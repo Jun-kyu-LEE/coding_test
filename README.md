@@ -16,7 +16,7 @@ templates/    자주 쓰는 코드 조각
 ./new.sh 11315
 ```
 
-`swea/11315.cpp` 가 SWEA 기본 틀로 만들어집니다. 풀고 나서:
+`swea/11315.cpp` 가 SWEA 기본 틀로 만들어지고 **VS Code 에서 자동으로 열립니다**. 풀고 나서:
 
 ```bash
 git add . && git commit -m "SWEA 11315" && git push
