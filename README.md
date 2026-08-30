@@ -8,15 +8,19 @@
 ```
 algo/
 ├── swea/
-│   ├── d1/ ~ d5/          # 난이도별
+│   ├── d1/ ~ d5/          # 난이도별 (앞으로 푸는 문제)
 │   │   └── 1289_원재의메모리복구하기/
 │   │       ├── solution.cpp
 │   │       └── note.md    # 접근법 / 막혔던 지점
+│   └── archive/           # 예전에 푼 문제 (난이도 미분류)
+├── practice/              # 문제 번호 없는 연습 코드 (유형별)
 ├── baekjoon/
 ├── programmers/
 ├── templates/             # 자주 쓰는 코드 조각
 └── new.sh                 # 문제 폴더 생성
 ```
+
+기존 풀이는 [`swea/archive/`](swea/archive/README.md) 와 [`practice/`](practice/README.md) 에 정리되어 있습니다.
 
 ## 사용법
 
