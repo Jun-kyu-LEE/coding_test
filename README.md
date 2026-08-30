@@ -1,6 +1,7 @@
 # Algorithm Practice
 
 코딩테스트 준비 저장소. 주력은 **SWEA**, 언어는 **C++17**.
+푼 코드를 아카이빙하는 용도입니다. 로컬 채점은 하지 않고, 정답 확인은 SWEA 사이트에서 합니다.
 
 ## 폴더 구조
 
@@ -10,13 +11,11 @@ algo/
 │   ├── d1/ ~ d5/          # 난이도별
 │   │   └── 1289_원재의메모리복구하기/
 │   │       ├── solution.cpp
-│   │       ├── note.md    # 접근법 / 막혔던 지점
-│   │       └── input.txt  # SWEA 제공 샘플 입력
+│   │       └── note.md    # 접근법 / 막혔던 지점
 ├── baekjoon/
 ├── programmers/
 ├── templates/             # 자주 쓰는 코드 조각
-├── new.sh                 # 문제 폴더 생성
-└── run.sh                 # 컴파일 + 실행
+└── new.sh                 # 문제 폴더 생성
 ```
 
 ## 사용법
@@ -27,23 +26,16 @@ algo/
 ./new.sh d3 1289 원재의메모리복구하기
 ```
 
-`swea/d3/1289_원재의메모리복구하기/` 에 `solution.cpp`(SWEA 기본 틀) · `note.md` · `input.txt`가 만들어집니다.
-`input.txt`에 SWEA 샘플 입력을 붙여넣고:
+`swea/d3/1289_원재의메모리복구하기/` 에 `solution.cpp`(SWEA 기본 틀)와 `note.md`가 만들어집니다.
+SWEA에서 통과한 코드를 `solution.cpp`에 붙여넣고 커밋하면 끝입니다.
 
 ```bash
-./run.sh swea/d3/1289_원재의메모리복구하기
+git add . && git commit -m "SWEA D3 1289 원재의 메모리 복구하기"
 ```
 
-직접 컴파일하려면:
+## SWEA 메모
 
-```bash
-g++ -std=c++17 -O2 -o a.exe solution.cpp && ./a.exe < input.txt
-```
-
-## SWEA 주의사항
-
-- 출력 형식은 **`#테스트케이스번호 답`** — `#` 와 번호 사이에 공백 없음, 번호와 답 사이에 공백 하나.
-- **제출 전 `freopen("input.txt", ...)` 줄을 반드시 주석 처리**할 것. 안 하면 무조건 틀립니다. 가장 흔한 실수입니다.
+- 출력 형식은 **`#테스트케이스번호 답`** — `#`와 번호 사이에 공백 없음, 번호와 답 사이에 공백 하나.
 - SWEA 채점기는 g++ 기준이라 `#include <bits/stdc++.h>`가 동작합니다. (MSVC에서는 안 됩니다)
 - 재귀 깊이가 깊은 문제는 스택 오버플로가 날 수 있습니다. 반복문 BFS로 바꾸는 걸 우선 고려하세요.
 

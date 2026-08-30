@@ -22,6 +22,3 @@ bin/
 Thumbs.db
 Desktop.ini
 .DS_Store
-
-# NOTE: input.txt 는 무시하지 않습니다.
-# SWEA 가 제공하는 샘플 입력이라 문제 폴더에 같이 남겨두는 게 좋습니다.

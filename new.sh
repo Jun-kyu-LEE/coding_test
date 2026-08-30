@@ -31,7 +31,6 @@ mkdir -p "$TARGET"
 cp "$ROOT/templates/swea_base.cpp" "$TARGET/solution.cpp"
 sed -e "s/{문제번호}/$NUM/" -e "s/{문제이름}/$NAME/" -e "s/{난이도}/${LEVEL#d}/" \
     "$ROOT/templates/note.md" > "$TARGET/note.md"
-: > "$TARGET/input.txt"
 
 echo "생성됨: $TARGET"
-echo "  solution.cpp  note.md  input.txt"
+echo "  solution.cpp  note.md"
