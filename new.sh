@@ -22,7 +22,9 @@ TARGET="$ROOT/$DIR/$NUM.cpp"
 cp "$ROOT/templates/swea_base.cpp" "$TARGET"
 echo "$DIR/$NUM.cpp"
 
-# 에디터에서 바로 열기
-if command -v code >/dev/null 2>&1; then
-    code "$TARGET"
+# Visual Studio 로 바로 열기
+DEVENV="/c/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/devenv.exe"
+if [ -x "$DEVENV" ]; then
+    # /edit : 이미 열려있는 VS 인스턴스가 있으면 거기에 탭으로 추가
+    "$DEVENV" /edit "$(cygpath -w "$TARGET")" &
 fi
