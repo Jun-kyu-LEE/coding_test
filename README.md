@@ -12,11 +12,18 @@ templates/    자주 쓰는 코드 조각
 
 ## 새 문제 풀 때
 
+**CMD / PowerShell**
+```
+new 11315
+```
+
+**Git Bash**
 ```bash
 ./new.sh 11315
 ```
 
-`swea/11315.cpp` 가 SWEA 기본 틀로 만들어지고 **Visual Studio 에서 자동으로 열립니다**. 풀고 나서:
+`swea/11315.cpp` 가 SWEA 기본 틀로 만들어지고 **Visual Studio 에서 자동으로 열립니다**.
+이미 있는 파일이면 새로 만들지 않고 그냥 열기만 합니다. 풀고 나서:
 
 ```bash
 git add . && git commit -m "SWEA 11315" && git push
